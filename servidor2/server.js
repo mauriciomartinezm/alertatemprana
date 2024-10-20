@@ -27,20 +27,23 @@ app.post("/recibir_datos", async (req, res) => {
 
   // Enviar mensaje si se detecta un comando específico
   //if (commands[2] === "Encender tercero") {
-  //  // Envía un SMS de alerta
-  //  //sendMessage("+573205056994");
-  //  // Envía un correo de alerta
-  //  try {
-  //    const resultado = await enviarCorreo(
-  //      "mauriciomartinez0416@gmail.com",
-  //      "Nivel del agua crítico",
-  //      "hola"
-  //    );
-  //    res.json({ message: resultado });
-  //  } catch (error) {
-  //    res.status(500).json({ message: `Error enviando el correo: ${error}` });
-  //  }
-  //}
+    // Envía un SMS de alerta
+    //sendMessage("+573205056994");
+    // Envía un correo de alerta
+    //try {
+    //  console.log("Subprograma");
+    //  const resultado = await enviarCorreo(
+    //    "mauriciomartinez0416@gmail.com",
+    //    "Nivel del agua crítico",
+    //    "hola"
+    //  );
+    //  console.log(resultado);
+//
+    //  res.json({ message: resultado });
+    //} catch (error) {
+    //  res.status(500).json({ message: `Error enviando el correo: ${error}` });
+    //}
+ // }
 });
 
 // Nueva ruta para servir los datos almacenados (GET)
@@ -50,16 +53,16 @@ app.get("/recibir_datos", (req, res) => {
 
 //test
 app.get("/enviar_correo", async (req, res) => {
-  try {
+  //try {
     const resultado = await enviarCorreo(
       "mauriciomartinez0416@gmail.com",
       "Nivel del agua crítico",
       "<h1>Nivel del agua crítico</h1><h2>alertatemprana.space</h2>"
     );
     res.json({ message: resultado });
-  } catch (error) {
-    res.status(500).json({ message: `Error enviando el correo: ${error}` });
-  }
+  //} catch (error) {
+   // res.status(500).json({ message: `Error enviando el correo: ${resultado}` });
+  //}
 });
 
 const server = app.listen(port, () => {
