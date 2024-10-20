@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerta Temprana</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="main-container">
+        <h1>Nivel de los Sensores</h1>
+        <section class="sensores-info">
+            <div class="sensor" id="1ersensor">
+                <h2>Nivel del primer sensor</h2>
+                <h3 id="sensor1">Esperando datos...</h3>
+            </div>
+            <div class="sensor" id="2dosensor">
+                <h2>Nivel del segundo sensor</h2>
+                <h3 id="sensor2">Esperando datos...</h3>
+            </div>
+            <div class="sensor" id="3ersensor">
+                <h2>Nivel del tercer sensor</h2>
+                <h3 id="sensor3">Esperando datos...</h3>
+            </div>
+        </section>
+       
+        <section class="leds-info">
+            <h2>Estado nivel del agua</h2>
+            <div class="leds-group">
+                <div class="leds-subgroup">
+                    <h4 class="led-label">Nivel<br>normal</h4>
+                    <div id="led1" class="led led-apagado" aria-label="Nivel normal apagado"></div>
+                </div>
+                <div class="leds-subgroup">
+                    <h4 class="led-label">Riesgo de<br>creciente</h4>
+                    <div id="led2" class="led led-apagado" aria-label="Riesgo de creciente apagado"></div>
+                </div>
+                <div class="leds-subgroup">
+                    <h4 class="led-label">Creciente<br>inminente</h4>
+                    <div id="led3" class="led led-apagado" aria-label="Creciente inminente apagado"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
