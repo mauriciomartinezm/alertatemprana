@@ -1,5 +1,5 @@
 function cargarDatos() {
-  fetch("http://192.168.2.108:3000/recibir_datos")
+  fetch("http://192.168.2.102:3000/recibir_datos")
     .then((response) => response.json())
     .then((data) => {
       console.log(data); // Imprime el objeto JSON completo para depuración
