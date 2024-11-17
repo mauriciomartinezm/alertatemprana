@@ -9,7 +9,7 @@ commands = ["Apagar primero", "Apagar segundo", "Apagar tercero"]  # Para almace
 # Función para enviar los datos al servidor
 def enviar_datos(diccionario):
     try:
-        response = requests.post("https://alertatempranaapi-1.onrender.com/recibir_datos", json=diccionario)
+        response = requests.post("https://alertatempranaapi.onrender.com/recibir_datos", json=diccionario)
         # Puedes descomentar para ver la respuesta del servidor
         # print(response.text)
     except Exception as e:
